@@ -1,0 +1,463 @@
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+.container-fluid{
+  padding: 0;
+}
+.row{
+  margin: 0;
+}
+/*navbar css*/
+.index-height{
+  height: 520px;
+}
+.navbar-brand {
+  color: #fff;
+}
+.navbar-brand:hover {
+  color: lime;
+}
+.navbar{
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.navbar i{
+  font-size: 1.4em;
+}
+#navbarSupportedContent{
+  justify-content: flex-end;
+}
+.navbar-nav .nav-link{
+  color: #fff;
+}
+.navbar-nav .active > .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .show > .nav-link{
+  color: lime;
+}
+.secondarypagesnav{
+  height: 59px;
+}
+.secondarypagesnav .navbar{
+  background: #011301;
+}
+/*carousel css override*/
+#nav-carousel{
+  position: relative;
+  top: 0;
+}
+.w-100{
+  height: 80vh;
+}
+.carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+.carousel-control-next, .carousel-control-prev{
+  width: 4%;
+}
+#carousel-text{
+  width: 30%;
+  position: relative;
+  left: 65%;
+  bottom: 55%;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 1rem;
+}
+#carousel-text p:first-child{
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+#carousel-text h1{
+	padding-bottom: 0px;
+	margin-top: -9px;
+}
+#carousel-text p:last-child{
+  text-align: right;
+  margin-bottom: 0;
+}
+#carousel-text p:last-child a{
+  font-size: .9em;
+  color: lime;
+}
+/*home page css | aside events*/
+main{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #EAEDED;
+}
+.event-list{
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+.event-list p{
+  margin-top: 2rem;
+}
+.event-list h1, .recommind h1, .contact .col-lg-5 h1, .title{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.event{
+  font-size: .8em;
+  border-bottom: 1px dotted #000;
+  margin-top: 1.5rem;
+}
+.event p{
+  margin-top: 0;
+}
+.event h2, .about .col:last-of-type h2, .events-main .col:last-of-type h1{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.event .row{
+  padding-left: 0;
+  font-size: .7em;
+  margin-bottom: .3rem;
+}
+.event .row li{
+  padding-right: .5rem;
+  font-style: italic;
+}
+/*index main with 2 sliders and recommindations*/
+.spells{
+  margin: 2rem 0 3rem
+  0;
+}
+.title{
+  padding-left: 1rem;
+}
+.recommind h1{
+  width: 100%;
+}
+.recommended-spell{
+  width: 45%;
+  background-color: #dfcba5;
+  border-radius: 30px 30px 30px 0;
+  margin-top: 2rem;
+}
+.recommended-spell .row p{
+	font-size: 1.3em;
+	padding-left: 1rem;
+	padding-top: 1rem;
+}
+.recommended-spell .row img{
+	height: 110px;
+  border-radius: 0 30px 0 0;
+}
+.recommended-spell p{
+  	padding-left: 1rem;
+  	font-style: italic;
+    width: 71.5%;
+}
+.recommended-spell:first-of-type{
+  margin-right: 6rem;
+}
+/*footer css*/
+footer{
+  background-color: #011301;
+  color: #fff;
+}
+footer .col{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+footer .col:first-of-type{
+  padding-left: 3rem;
+}
+footer .col:last-of-type{
+  padding-right: 3rem;
+}
+footer p{
+  font-size: .5em;
+  margin-bottom: 0;
+}
+footer ul{
+  margin-bottom: 0;
+  display: inline-block;
+  justify-content: flex-end;
+}
+footer li{
+  font-size: .7em;
+  margin-right: .7rem;
+  border-right: 1px solid #fff;
+  padding-right: .7rem;
+}
+footer li:last-of-type{
+  border-right: none;
+}
+footer a{
+  color: #fff;
+}
+footer a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+/*about page css*/
+.about img{
+  border: 1px solid #000;
+}
+.about .col:first-of-type{
+  padding-top: 0;
+}
+.about .col:first-of-type p:first-child{
+  text-indent: 5%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 4.5rem;
+}
+.about .col:last-child{
+  padding-top: 3rem;
+}
+.about .col:last-of-type h2, .events-main .col:last-of-type h1{
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.staffbio{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.staffbio h3{
+font-size: 1.2rem;
+}
+.staffbio p{
+  font-style: italic;
+}
+/*events page and calender css*/
+.events-main{
+  padding-bottom: 4.9rem;
+}
+.events-main .col:first-of-type, .about .col:first-of-type, #catalog-aside{
+  padding-left: 2rem;
+}
+.events-main .col:last-of-type, .about .col:last-of-type, #catalog-log{
+  padding-right: 2rem;
+}
+.calender{
+  background-image: url(../images/calenderbg.jpg);
+	border: 1px solid #c4c79a;
+}
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.month ul li span{
+  font-size: 18px;
+}
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+.month .prev a, .month .next a{
+  color: #fff;
+  text-decoration: none;
+}
+.month .prev a:hover, .month .next a:hover{
+  color: #454746;
+}
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+}
+.weekdays li {
+  display: inline-block;
+  width: 12.6%;
+  color: #666;
+  text-align: center;
+}
+.days {
+  padding: 10px 0;
+  margin: 0;
+}
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+.days li .othermonthdate{
+  color: #b4b2b2;
+}
+.days li a{
+  color: #666;
+  text-decoration: none;
+}
+.days li .active, .days li a:hover{
+  padding: 5px;
+  background: #454746;
+  color: white !important
+}
+.noevent {
+	text-align: center;
+	font-style: italic;
+	text-transform: uppercase;
+}
+/*contact page css*/
+#map {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+ }
+
+.contact .col-lg-5 {
+  padding-right: 2rem;
+}
+.contact .col-lg-5 div:first-of-type h1{
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.contact .col-lg-5 div:first-of-type p{
+  font-size: 1em;
+  margin-bottom: .5rem;
+}
+.contact .col-lg-5 div:first-of-type span{
+  font-weight: bold;
+}
+.contact .col-lg-5 div:nth-of-type(2), .contact .col-lg-5 div:nth-of-type(3){
+  margin-top: 3rem;
+}
+ .contact .col-lg-5 div:nth-of-type(2) h1{
+   font-size: 1em;
+   border-bottom: 1px dotted #000;
+   padding-bottom: 1rem;
+ }
+ .contact .col-lg-5 div:nth-of-type(2) ul{
+   padding-left: 0;
+ }
+ .contact .col-lg-5 div:nth-of-type(2) ul .row{
+   justify-content: space-between;
+ }
+ .contact .col-lg-5 div:nth-of-type(3) h1{
+   font-size: 1em;
+   font-weight: bold;
+   margin-bottom: 2rem;
+ }
+ .contact .col-lg-5 div:nth-of-type(3) form p{
+   margin-bottom: 0;
+ }
+ .contact .col-lg-5 div:nth-of-type(3) input{
+   width: 80%;
+   margin-bottom: 1.5rem;
+ }
+ .contact .col-lg-5 div:nth-of-type(3) input:last-of-type{
+   width: 22%;
+   margin-top: 1rem;
+ }
+ /*catalog page css*/
+ #catalog-aside{
+   border-right: 1px solid #bebebe;
+ }
+ .catalog-form h1{
+   font-size: 1.3em;
+   margin-bottom: .7rem;
+ }
+ .catalog-form ul{
+   padding-left: .5rem;
+ }
+ .catalog-form ul li{
+   margin-bottom: .3rem;
+   font-size: .8em;
+ }
+ .catalog-form ul li span, .catalog-form span{
+   padding: 0 .5rem;
+   font-size: .9em;
+ }
+
+ .submitbtn {
+   margin-top: 2rem;
+  padding: 3px 25px;
+	border-radius: 33px;
+  background-color: #007400;
+  border: none;
+  color: #fff;
+ }
+ .submitbtn:hover{
+   background-color: #011301;
+   color: #fff;
+   text-decoration: none;
+ }
+ .sublist{
+  margin: 1rem 0;
+ }
+ .sublist div:last-of-type{
+   padding-left: 2rem;
+ }
+ .entrytile{
+   margin: 1rem 2rem;
+   width: 204px;
+ }
+ .entrytile a{
+   color: #3e3e3e;
+   text-decoration: none;
+ }
+ .entrytile .row{
+   padding-top: .5rem;
+   justify-content: space-between;
+ }
+ .entrytile h1{
+   font-size: 1em;
+   width: 100%;
+ }
+ .entrytile p{
+   font-size: .8em;
+   font-style: italic;
+ }
+ .index-entrytile{
+   margin: 1rem;
+ }
+.pagination {
+   justify-content: center;
+   margin-top: 1rem;
+ }
+  .pagination a{
+  color: #011301;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+ }
+ .page-item.active .page-link {
+  background-color: #011301;
+  color: white;
+  border: none;
+}
+ .pagination a:hover:not(.page-item.active .page-link) {
+   background-color: #ddd;
+ }
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
